@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<title>TiiP International Inc. | Order/Quote Form</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">TiiP International Inc.</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catalogue <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="cataloguepdfsections/sectionA.pdf" target="_blank">Section A (Screen and Screen Repair)</a></li>
+            <li><a href="cataloguepdfsections/screenframecolours.pdf" target="_blank">Screen Frame Colours</a></li>
+            <li><a href="cataloguepdfsections/sectionB.pdf" target="_blank">Section B (Patio Screen Door)</a></li>
+            <li><a href="cataloguepdfsections/doorcolours.pdf" target="_blank">Patio screen Door Colours</li>
+            <li><a href="cataloguepdfsections/sectionC.pdf" target="_blank">Section C (Patio Glass Door)</a></li>
+          	<li><a href="cataloguepdfsections/sectionD.pdf" target="_blank">Section D (Window Hardware)</a></li>
+            <li><a href="cataloguepdfsections/multipoints.pdf" target="_blank">Multi-Point Locks</a></li>  
+            <li><a href="cataloguepdfsections/sectionE.pdf" target="_blank">Section E (Truth Hardware)</a></li>
+            <li><a href="cataloguepdfsections/rotohardware.pdf">Roto Hardware</a></li>
+            <li><a href="cataloguepdfsections/sectionF.pdf" target="_blank">Section F (Commercial Door Hardware)</a></li>
+            <li><a href="cataloguepdfsections/sectionG.pdf" target="_blank">Section G (Closet and Garage Door Hardware)</a></li>
+            <li><a href="cataloguepdfsections/sealants.pdf" target="_blank">Sealants</a></li>
+            
+            <li role="separator" class="divider"></li>
+            <li><a href="http://www.tiipinc.com/catalogue.pdf">Entire Catalogue PDF</a></li>
+            <li role="separator" class="divider"></li>
+            
+          </ul>
+        </li>
+        <li><a href="orderform.html">Quote/Order Form</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="featuredprods.html">Featured Products</a></li>
+        <li><a href="howto.html">How-To Videos</a></li>
+        <li><a href="termsconditions.html">Terms and Conditions</a></li>
+      </ul>
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<section class="hero">
+<div class="container">
+<div class="orderQuote col-xs-10 col-xs-offset-1 col-md-offset-1 col-md-10"> <p>Quote/Order</p>
+  
+</div></div>
+ <!--  insert tiip logo banner col-md-10 offset-1 -->
+</section>
+
+
+<br><br><br>
+<div class="container contactform">
+  <form action="//formspree.io/sales@tiipinc.com"
+      method="POST">
+    <div class="row">
+        <div class="col-md-4 col-xs-10">
+        <input type="text" name="_format" value="plain" style="display:none" />
+          <input type="radio" name="status" value="quote">   Quote<br>
+          <input type="radio" name="status" value="order">   Order<br>
+          <label for='name'>Your Name:</label><br>
+          <input type="text" name="name" required><br>
+          <label for='companyName'>Company Name:</label><br>
+          <input type="text" name="companyName"><br>
+          <label for='email'>Email Address:</label> <br>
+          <input type="text" name="email"> <br>
+          <label for='address'>Address:</label> <br>
+          <input type="text" name="address"> <br>
+          <label for='city'>City:</label> <br>
+          <input type="text" name="city"> <br>
+          <label for='province'>Province/State:</label> <br>
+          <input type="text" name="province"> <br>
+          <label for='postcode'>Postal/Zip Code:</label> <br>
+          <input type="text" name="postcode"> <br>
+          <label for="tel">Telephone:</label>
+          <input type="tel" name="tel" id="tel" required>
+        </div>
+      </div>
+        <div class="row">
+        <div class="col-md-4 col-xs-10">
+          
+          <label for='ponumber'>P.O. Number:</label> <br>
+          <input type="text" name="ponumber"><br>
+          <label for='shipdate'>Ship Date:</label> <br>
+          <input type="text" name="shipdate"><br>
+          <input type="text" name="_gotcha" style="display:none" />
+        </div>
+      </div>
+     <div class="row"> 
+    <div class="col-md-3 col-xs-3">
+          <label for="quantity1">Qty:</label><br>
+          <input type="number" name="quantity1" min="1" max="10000" required><br>
+    </div>
+    <div class="col-md-9 col-xs-9">      
+          <label for='item1'>Item:</label><br> 
+          <input type="text" name="item1" required><br>
+    </div>
+    <div class="col-md-3 col-xs-3">
+          <label for="quantity2">Qty:</label><br>
+          <input type="number" name="quantity2" min="1" max="10000"><br>
+    </div>
+    <div class="col-md-9 col-xs-9">      
+          <label for='item2'>Item:</label><br> 
+          <input type="text" name="item2"><br>
+    </div>
+    <div class="col-md-3 col-xs-3">
+          <label for="quantity3">Qty:</label><br>
+          <input type="number" name="quantity3" min="1" max="10000"><br>
+    </div>
+    <div class="col-md-9 col-xs-9">      
+          <label for='item3'>Item:</label><br> 
+          <input type="text" name="item3"><br>
+    </div>
+    <div class="col-md-3 col-xs-3">
+          <label for="quantity4">Qty:</label><br>
+          <input type="number" name="quantity4" min="1" max="10000"><br>
+    </div>
+    <div class="col-md-9 col-xs-9">      
+          <label for='item4'>Item:</label><br> 
+          <input type="text" name="item4"><br>
+    </div>
+    <div class="col-md-3 col-xs-3">
+          <label for="quantity5">Qty:</label><br>
+          <input type="number" name="quantity5" min="1" max="10000"><br>
+    </div>
+    <div class="col-md-9 col-xs-9">      
+          <label for='item5'>Item:</label><br> 
+          <input type="text" name="item5"><br>
+    </div>
+    <div class="col-md-3 col-xs-3">
+          <label for="quantity6">Qty:</label><br>
+          <input type="number" name="quantity6" min="1" max="10000"><br>
+    </div>
+    <div class="col-md-9 col-xs-9">      
+          <label for='item6'>Item:</label><br> 
+          <input type="text" name="item6"><br>
+    </div>
+    <div class="col-md-3 col-xs-3">
+          <label for="quantity7">Qty:</label><br>
+          <input type="number" name="quantity7" min="1" max="10000"><br>
+    </div>
+    <div class="col-md-9 col-xs-9">      
+          <label for='item7'>Item:</label><br> 
+          <input type="text" name="item7"><br>
+    </div>
+    <div class="col-md-3 col-xs-3">
+          <label for="quantity8">Qty:</label><br>
+          <input type="number" name="quantity8" min="1" max="10000"><br>
+    </div>
+    <div class="col-md-9 col-xs-9">      
+          <label for='item8'>Item:</label><br> 
+          <input type="text" name="item8"><br>
+    </div>
+    <div class="col-md-3 col-xs-3">
+          <label for="quantity9">Qty:</label><br>
+          <input type="number" name="quantity9" min="1" max="10000"><br>
+    </div>
+    <div class="col-md-9 col-xs-9">      
+          <label for='item9'>Item:</label><br> 
+          <input type="text" name="item9"><br>
+    </div>
+    
+        <div class="col-md-6 col-xs-6"
+        <label for='instructions'>Special Instructions/Notes</label><br> 
+        <textarea name="instructions"></textarea> <br><br>
+    </div>
+  </div>
+  <div class="row>"
+    <div class="col-md-3 col-xs-3">    
+        <input type="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+    </form>
+</div>
+
+<section class="footer">
+  
+<div class="container">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-4 ">
+        </div>
+        <div class="col-md-4">
+          <FORM><INPUT Type="button" VALUE="Back" id="backPage" onClick="history.go(-1);return true;"></FORM>
+        </div>
+        <div class="col-md-4">
+          
+        </div>
+        
+    </div>
+</div>
+    <div class="row">
+        <div class="col-md-12"></div>
+    </div> 
+</div>
+
+</section>
+<p>&copy; 2015 Joseph Gerofsky <a href="http://www.jgwebdev.com">jgwebdev.com</a><p>
+
+
+
+
+
+
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
